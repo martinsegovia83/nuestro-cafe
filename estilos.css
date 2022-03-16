@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+}
+
+header{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #ddb761 solid 3px;
+}
+
+.logo img{
+    width: 10rem;
+    height: 10rem;
+    margin-left: 50px;
+}
+
+.nav-menu ul{
+    display: flex;
+    gap: 7px;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-right: 50px;
+}
+
+.nav-menu li{
+    list-style: none;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s linear;
+}
+
+.nav-menu a:hover{
+    color: #ddb761;
+    border-bottom: #ddb761 solid 1px;
+    padding-bottom: 3px;
+}
+
+.menu-icon{
+    width: 40px;
+    height: 40px;
+}
+
+.menu-icon, #check{
+    display: none;
+}
+
+main{
+    width: 100%;
+    height: 48rem;
+    background-image: url(img/main2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+main h1{
+    padding-top: 250px;
+    padding-left: 50px;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #fff;
+}
+
+main p{
+    color: #fff;
+    padding: 30px 50px;
+    line-height: 2em;
+}
+
+main button{
+    margin-left: 50px;
+    width: 150px;
+    height: 40px;
+    background-color: #ddb761;
+    border: #fff solid 1px;
+    border-radius: 10px;
+}
+
+main button a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 20px;
+}
+
+main button:hover{
+    transform: translateX(25px);
+    transition: 1s ease;
+}
+
+.titulos{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.titulo{
+    color: #ddb761;
+}
+
+.nosotros{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 250px;
+}
+
+.nos1{
+    height: 100%;
+    width: 50%;
+    background-image: url(img/nosotros.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.nos2{
+    height: 100%;
+    width: 50%;
+    background-color: #110f0f;
+}
+.nos2 h3{
+    color: #fff;
+    font-size: 30px;
+    text-transform: capitalize;
+    padding: 70px 20px 25px 25px;
+}
+
+.nos2 p{
+    color: #fff;
+    padding: 10px 25px;
+    line-height: 25px;
+}
+
+.nos2 button{
+    margin-top: 25px;
+    margin-left: 50px;
+    width: 150px;
+    height: 40px;
+    background-color: #ddb761;
+    border: #fff solid 1px;
+    border-radius: 10px;
+}
+.nos2 button a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 20px;
+}
+.nos2 button:hover{
+    transform: translateX(25px);
+    transition: 1s ease;
+}
+
+.nuestro-menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 700px;
+    border: #ddb761 solid 1px;
+    border-radius: 30px;
+    margin: 5px 200px;
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 40px 70px;
+}
+
+.card div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #ddb761;
+}
+
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    box-shadow: 0 5px 10px #ddb761;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card .back h3{
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    letter-spacing: 1px;
+}
+
+.card .back p{
+    border-top: #ddb761 solid 2px;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+@media(max-width:768px){
+    .checkbtn{
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: 70px;
+        right: 20px;
+    }
+    .nav-menu ul{
+        display: block;
+        position: fixed;
+        top: 200px;
+        left: -100%;
+        background-color: #000000;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        padding-right: 0;
+    }
+    .nav-menu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        transition: all 0.7s;
+    }
+
+}
+
+
