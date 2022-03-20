@@ -12,12 +12,18 @@ body{
 }
 
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
     height: 200px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: #ddb761 solid 3px;
+    z-index: 20;
 }
 
 .logo img{
@@ -61,6 +67,7 @@ header{
 
 main{
     width: 100%;
+    margin: 200px auto 0px;
     height: 48rem;
     background-image: url(img/main2.jpg);
     background-position: center;
@@ -242,6 +249,245 @@ main button:hover{
     transform: perspective(600px) rotateY(360deg);
 }
 
+.productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 500px;
+}
+
+.productos div{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    color: #fff;
+    margin: 40px;
+    padding: 30px;
+}
+
+.seleccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #ddb761 solid 2px;
+    border-radius: 20px;
+}
+
+.seleccion img{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: #ddb761  2px 2px 7px;
+}
+
+.seleccion h3{
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.seleccion button{
+    background-color: #ddb761;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: .5s;
+    margin-top: 20px;
+}
+
+.seleccion a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #000000;
+    text-transform: capitalize;
+}
+
+.seleccion button:hover{
+    box-shadow: 2px 4px 7px #fff;
+    background-color: #110f0f;
+}
+
+.seleccion a:hover{
+    color: #fff;
+    text-shadow: #ddb761 3px 3px 4px;
+}
+
+.reseña{
+    width: 100%;
+    min-height: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.reseña div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 350px;
+    border: #ddb761 solid 2px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.reseña .icon{
+    width: 60px;
+    height: 60px;
+}
+.reseña p{
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.reseña .cliente{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    transition: .7s;
+}
+
+.reseña .opinion{
+    width: 150px;
+    height: 30px;
+
+}
+
+.reseña div:hover{
+    background-color: rgb(128, 126, 126);
+}
+
+.reseña .cliente:hover{
+    border-radius: 20%;
+    box-shadow: #000000 5px 5px 10px;
+}
+
+.contacto{
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 40px;
+}
+
+.contacto div{
+    width: 50%;
+    height: 400px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+.contacto iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contacto form{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 126, 126, 0.4);
+    padding: 0 70px;
+}
+
+form h3{
+    text-align: center;
+    color: #ddb761;
+    font-size: 30px;
+    padding: 10px;
+}
+
+form input, textarea{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+form textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+form #boton{
+    width: auto;
+    background-color: #ddb761;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: .5s;
+    margin-top: 10px;
+}
+
+#boton:hover{
+    transform: scale(1.2);
+    transition: 1s ease;
+    cursor: pointer;
+}
+
+
+footer{
+    width: 100%;
+    min-height: 200px;
+    background-color: #110f0f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+}
+
+footer li{
+    list-style: none;
+    margin: 15px;
+    transition: 1s;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+footer li:hover{
+    transform: rotatex(360deg);
+}
+.fin li{
+    border: rgba(255, 255, 255, 0.4) solid 1px;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+.fin li:hover{
+    transform: none;
+    background-color: #ddb761;
+    cursor: pointer;
+}
+
+footer p{
+    color: #fff;
+}
 @media(max-width:768px){
     .checkbtn{
         display: block;

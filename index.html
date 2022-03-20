@@ -18,16 +18,16 @@
                 <img src="img/menu.png" alt="menu" class="menu-icon">
             </label>
             <ul>
-                <li><a href="#">inicio</a></li>
-                <li><a href="#">nosotros</a></li>
-                <li><a href="#">menu</a></li>
-                <li><a href="#">productos</a></li>
-                <li><a href="#">reseñas</a></li>
-                <li><a href="#">contacto</a></li>
+                <li><a href="#inicio">inicio</a></li>
+                <li><a href="#nosotros">nosotros</a></li>
+                <li><a href="#menu">menu</a></li>
+                <li><a href="#productos">productos</a></li>
+                <li><a href="#reseña">reseñas</a></li>
+                <li><a href="#contacto">contacto</a></li>
             </ul>
         </div>
     </header>
-    <main>
+    <main id="inicio">
         <h1>un cafe fresco <br> en la mañana</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Assumenda praesentium non nemo voluptas unde odio?</p>
         <button><a href="#">ver más</a></button>
@@ -103,5 +103,96 @@
         </div>
     </section>
     <h2 class="titulos"><span class="titulo">nuestros</span> <span>productos</span></h2>
+    <section class="productos" id="productos">
+        <div class="seleccion">
+            <h3>selección Nº1</h3>
+            <img src="img/producto1.jpg" alt="producto1">
+            <button><a href="#">ver más</a></button>
+        </div>
+        <div class="seleccion">
+            <h3>selección Nº2</h3>
+            <img src="img/producto2.jpg" alt="producto1">
+            <button><a href="#">ver más</a></button>
+        </div>
+        <div class="seleccion">
+            <h3>selección Nº3</h3>
+            <img src="img/producto3.jpg" alt="producto1">
+            <button><a href="#">ver más</a></button>
+        </div>
+        <div class="seleccion">
+            <h3>selección Nº4</h3>
+            <img src="img/producto4.jpg" alt="producto1">
+            <button><a href="#">ver más</a></button>
+        </div>
+    </section>
+    <h2 class="titulos">opiniones de <span class="titulo">clientes</span></h2>
+    <section class="reseña" id="reseña">
+        <div>
+            <img class="icon" src="img/comentario.png" alt="menu">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nihil, iure accusantium distinctio vero aliquam. Quaerat dolores aliquid assumenda ullam consequatur debitis error? Placeat at reiciendis porro illum est adipisci?</p>
+            <h3>Jhon Castar</h3>
+            <img class="cliente" src="img/cara1.jpg" alt="cara">
+            <img class="opinion" src="img/clasificacion.png" alt="estrellas">
+        </div>
+        <div>
+            <img class="icon" src="img/comentario.png" alt="menu">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nihil, iure accusantium distinctio vero aliquam. Quaerat dolores aliquid assumenda ullam consequatur debitis error? Placeat at reiciendis porro illum est adipisci?</p>
+            <h3>Elsa Mort</h3>
+            <img class="cliente" src="img/cara3.jpg" alt="cara">
+            <img class="opinion" src="img/clasificacion (1).png" alt="estrellas">
+        </div>
+        <div>
+            <img class="icon" src="img/comentario.png" alt="menu">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nihil, iure accusantium distinctio vero aliquam. Quaerat dolores aliquid assumenda ullam consequatur debitis error? Placeat at reiciendis porro illum est adipisci?</p>
+            <h3>Jhon Castar</h3>
+            <img class="cliente" src="img/cara2.jpg" alt="cara">
+            <img class="opinion" src="img/clasificacion.png" alt="estrellas">
+        </div>
+        <div>
+            <img class="icon" src="img/comentario.png" alt="menu">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nihil, iure accusantium distinctio vero aliquam. Quaerat dolores aliquid assumenda ullam consequatur debitis error? Placeat at reiciendis porro illum est adipisci?</p>
+            <h3>Elsa Mort</h3>
+            <img class="cliente" src="img/cara4.jpg" alt="cara">
+            <img class="opinion" src="img/clasificacion (1).png" alt="estrellas">
+        </div>
+    </section>
+    <h2 class="titulos"><span class="titulo">donde</span> <span>ubicarnos</span></h2>
+    <section class="contacto" id="contacto">
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7509109658745!2d-58.46375348417554!3d-34.585168764024985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5e18c7875b1%3A0x8b748d156fa0187f!2sAv%20Triunvirato%202800-2726%2C%20C1427AAN%20CABA!5e0!3m2!1ses-419!2sar!4v1647735002144!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div>
+            <form action="">
+                <h3>contacto</h3>
+                <input type="text" name="Nombre" placeholder="Nombre">
+                <input type="email" name="correo" placeholder="E-mail">
+                <input type="text" name="asunto" placeholder="asunto">
+                <textarea name="mensaje" placeholder="Escriba su Mensaje"></textarea>
+                <input type="button" value="ENVIAR" id="boton">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <ul>
+                <li><a href="#"><img src="img/001-facebook.png" alt="facebook" width="40px"></a></li>
+                <li><a href="#"><img src="img/002-twitter.png" alt="twitter" width="40px"></a></li>
+                <li><a href="#"><img src="img/003-instagram.png" alt="instagram" width="40px"></a></li>
+                <li><a href="#"><img src="img/linkedin.png" alt="linkedin" width="40px"></a></li>
+                <li><a href="#"><img src="img/youtube.png" alt="youtube" width="40px"></a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="fin">
+                <li><a href="#inicio">inicio</a></li>
+                <li><a href="#nosotros">nosotros</a></li>
+                <li><a href="#menu">menu</a></li>
+                <li><a href="#productos">productos</a></li>
+                <li><a href="#reseña">reseñas</a></li>
+                <li><a href="#contacto">contacto</a></li>
+            </ul>
+        </div>
+        <p>©2022 Lucas Segovia | All Rights  Reserved</p>
+    </footer>
 </body>
 </html>
